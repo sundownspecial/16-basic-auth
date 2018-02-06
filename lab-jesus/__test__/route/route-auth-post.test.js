@@ -13,21 +13,7 @@ describe('POST /api/v1/auth', function() {
   afterEach(mocks.auth.removeAll);
 
   describe('Valid requests', () => {
-    // beforeAll(() => {
-    //   return mocks.auth.createOne()
-    //     .then(auth => this.mockMake = auth)
-    //     .then(() => {
-    //       this.fakeAuth = {
-    //         username: faker.internet.username(),
-    //         password: faker.internet.password(),
-    //         email: faker.internet.email(),
-    //       };
 
-    //       return superagent.post(`${this.base}`)
-    //         .send(this.fakeAuth)
-    //         .then(res => this.response = res);
-    //     });
-    // });
 
     it('should return a status of 201', () => {
       return superagent.post(`${this.base}`)
